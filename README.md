@@ -49,3 +49,11 @@ After you create your TCP port (give it a name lol), hit "connect" then look at 
 
 If everything goes well, QgroundControl will display 'Ready to Fly'
 <img width="912" alt="Capture d’écran 2023-02-20 à 20 55 22" src="https://user-images.githubusercontent.com/117035426/220189090-32d96657-6f0b-4c8d-a9d9-9aa19e1bbf20.png">
+
+if you already have a python script, here's how you proceed : (my script's named test.py)
+
+if you're on MacOs, run :
+
+``python3 test.py `` 
+
+
