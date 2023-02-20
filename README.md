@@ -11,17 +11,15 @@ drone kit X Qgroundcontrol
 
 # Launching the TCP connection 
 
-In a terminal tab enter
+In a terminal tab enter : 
 
 ``dronekit-sitl [the model you want] ``
 
-you can find out your options with 
+you can find out your options with : 
 
 ``dronekit-sitl --list `` 
 
-for this example we're going to use the copter model
-
-so we'll enter 
+for this example we're going to use the copter model, so we'll enter :
 
 `` dronekit-sitl copter ``
 
@@ -39,10 +37,9 @@ the you'll open your ground station, here it's QgroundControl
 
 here we'll go : "application's settings > Comm links > Add" 
 
-we'll create <img width="912" alt="Capture d’écran 2023-02-20 à 20 56 05" src="https://user-images.githubusercontent.com/117035426/220189079-f4f655fb-76ae-489d-b637-83cfb84cba83.png">
-TCP port, the host will be 127.0.0.1 and the hotspot will be 5760.
+we'll create a TCP port, the host will be 127.0.0.1 and the hotspot will be 5760
 
-
+<img width="912" alt="Capture d’écran 2023-02-20 à 20 56 05" src="https://user-images.githubusercontent.com/117035426/220189079-f4f655fb-76ae-489d-b637-83cfb84cba83.png">
 
 
 After you create your TCP port (give it a name lol), hit "connect" then look at your terminal
