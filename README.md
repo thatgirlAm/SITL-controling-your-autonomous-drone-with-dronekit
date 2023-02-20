@@ -9,6 +9,8 @@ drone kit X Qgroundcontrol
 
 ``sudo pip install pymavlink ``
 
+``sudo pip install dronekit-sitl
+
 # Launching the TCP connection 
 
 In a terminal tab enter : 
