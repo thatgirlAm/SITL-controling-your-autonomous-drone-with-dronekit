@@ -39,8 +39,13 @@ the you'll open your ground station, here it's QgroundControl
 
 here we'll go : "application's settings > Comm links > Add" 
 
-we'll create TCP port, the host will be 127.0.0.1 and the hotspot will be 5760.
+we'll create <img width="912" alt="Capture d’écran 2023-02-20 à 20 56 05" src="https://user-images.githubusercontent.com/117035426/220189079-f4f655fb-76ae-489d-b637-83cfb84cba83.png">
+TCP port, the host will be 127.0.0.1 and the hotspot will be 5760.
+
+
+
 
 After you create your TCP port (give it a name lol), hit "connect" then look at your terminal
 
 If everything goes well, QgroundControl will display 'Ready to Fly'
+<img width="912" alt="Capture d’écran 2023-02-20 à 20 55 22" src="https://user-images.githubusercontent.com/117035426/220189090-32d96657-6f0b-4c8d-a9d9-9aa19e1bbf20.png">
