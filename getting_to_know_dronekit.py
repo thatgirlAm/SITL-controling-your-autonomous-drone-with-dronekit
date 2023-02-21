@@ -10,8 +10,7 @@ parser = argparse.ArgumentParser(description'Commands')
 parser.add_argument('--connect')
 args = parser.pars_args()
              
-#ip adress
-
+#connection_string is the ip adress of our drone 
 connection_string = args.connect  
     
 print('Connectiong to vehicule on: %s' connection_string)
@@ -97,5 +96,4 @@ vehicule.simple_goto(wayPoint_3,groundspeed=3);
 
 # get location 
 #coordinates = get_location()
-
 opening_pods(coordinates)
