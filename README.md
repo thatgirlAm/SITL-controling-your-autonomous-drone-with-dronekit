@@ -16,10 +16,15 @@ For QGroundControl, I've installed this one : https://github.com/mavlink/qground
 And don't forget to follow the official instructions before the installation: https://docs.qgroundcontrol.com/master/en/getting_started/download_and_install.html
 
 ``sudo usermod -a -G dialout $USER ``
+
 ``sudo apt-get remove modemmanager -y ``
+
 ``sudo apt install gstreamer1.0-plugins-bad gstreamer1.0-libav gstreamer1.0-gl -y ``
+
 ``sudo apt install libqt5gui5 -y ``
+
 ``sudo apt install libfuse2 -y ``
+
 also logout and login again.
 
 # Launching the TCP connection 
