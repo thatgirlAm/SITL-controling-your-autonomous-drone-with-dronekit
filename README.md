@@ -31,28 +31,35 @@ if your program executes normally, you'll have
 
 In a new terminal tab, enter the following lines :
 
-``mavproxy.py --master tcp:127.0.0.1:5760 --sitl 127.0.0.1:5501  --out 127.0.0.1:14550 --out 127.0.0.1:14551``
+`mavproxy.py --master tcp:127.0.0.1:5760 --out 127.0.0.1:14550``
 
-here we use two ports 14550 and 14551, you can go on, but here we'll only use the two ports for now. 
-
-the you'll open your ground station, here it's QgroundControl 
-
-here we'll go : "application's settings > Comm links > Add" 
-
-we'll create a TCP port, the host will be 127.0.0.1 and the hotspot will be 5760
-
-<img width="912" alt="Capture d’écran 2023-02-20 à 20 56 05" src="https://user-images.githubusercontent.com/117035426/220189079-f4f655fb-76ae-489d-b637-83cfb84cba83.png">
+What it does is that Mavproxy creates a TCP server on the 5670 port then forward all the packets on the port 14550. That's where you need to connect on your script.
 
 
-After you create your TCP port (give it a name lol), hit "connect" then look at your terminal
+Then you'll open your ground station, here it's QgroundControl.
 
-If everything goes well, QgroundControl will display 'Ready to Fly'
-<img width="912" alt="Capture d’écran 2023-02-20 à 20 55 22" src="https://user-images.githubusercontent.com/117035426/220189090-32d96657-6f0b-4c8d-a9d9-9aa19e1bbf20.png">
+There is a known bug between Python scripts and mavlink that disallow any script to control and change the VehicleMode.
 
-if you already have a python script, here's how you proceed : (my script's named test.py)
+It's supposed to be fixed by going back to pymavlink version 2.4.8 but I didn't test it yet because I found a work-around.
 
-if you're on MacOs, run :
+It's messy but hey, it works.
 
-``python3 test.py `` 
+You basically have to manually change the VehicleMode on your QGroundStation :
+
+![Capture d'écran_20230223_195417](https://user-images.githubusercontent.com/109297892/221003463-de3af800-c32d-4b58-b738-44976ecc2507.png)
+
+See the "Stabilize" on the top ? Click on it and select "Guided".
+
+Now that it has been done, you can go ahead and launch your script using
+
+`` python (your_script.py) ``
+
+When your script is launched, the "Ready to Fly" will change into a "Communication Lost". Don't worry, communication is lost because your script is now controlling the drone. Now you have to wait until your script finishes and you'll see that your drone moves according to your script.
+
+NB: Sometimes, when you launch your script, it loads "Waiting for arming" for infinity. I have no idea why, so I just Ctrl-C and launch the python command again.
+
+Now, profit !!
+
+[drone](https://user-images.githubusercontent.com/109297892/221008823-1de2011f-6aa8-4f09-99da-aa0f5002b7b8.png)
 
 
