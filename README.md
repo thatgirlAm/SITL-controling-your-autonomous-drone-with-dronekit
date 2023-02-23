@@ -47,7 +47,7 @@ if your program executes normally, you'll have
 
 In a new terminal tab, enter the following lines :
 
-`mavproxy.py --master tcp:127.0.0.1:5760 --out 127.0.0.1:14550``
+`` mavproxy.py --master tcp:127.0.0.1:5760 --out 127.0.0.1:14550 ``
 
 What it does is that Mavproxy creates a TCP server on the 5670 port then forward all the packets on the port 14550. That's where you need to connect on your script.
 
