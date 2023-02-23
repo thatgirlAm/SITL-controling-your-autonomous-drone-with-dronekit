@@ -1,7 +1,7 @@
 # Little dronekit X Qground control example
 drone kit X Qgroundcontrol 
 
-# Install requiered dependencies 
+# Install required dependencies 
 
 ``sudo pip install dronekit``
 
@@ -10,6 +10,17 @@ drone kit X Qgroundcontrol
 ``sudo pip install pymavlink ``
 
 ``sudo pip install dronekit-sitl ``
+
+For QGroundControl, I've installed this one : https://github.com/mavlink/qgroundcontrol/releases/tag/v4.1.5
+
+And don't forget to follow the official instructions before the installation: https://docs.qgroundcontrol.com/master/en/getting_started/download_and_install.html
+
+``sudo usermod -a -G dialout $USER ``
+``sudo apt-get remove modemmanager -y ``
+``sudo apt install gstreamer1.0-plugins-bad gstreamer1.0-libav gstreamer1.0-gl -y ``
+``sudo apt install libqt5gui5 -y ``
+``sudo apt install libfuse2 -y ``
+also logout and login again.
 
 # Launching the TCP connection 
 
@@ -46,7 +57,8 @@ It's messy but hey, it works.
 
 You basically have to manually change the VehicleMode on your QGroundStation :
 
-![Capture d'écran_20230223_195417](https://user-images.githubusercontent.com/109297892/221003463-de3af800-c32d-4b58-b738-44976ecc2507.png)
+![Capture d'écran_20230223_195417](https://user-images.githubusercontent.com/109297892/221009435-243626f3-76b9-4496-b88b-84e1def0ce8f.png)
+
 
 See the "Stabilize" on the top ? Click on it and select "Guided".
 
