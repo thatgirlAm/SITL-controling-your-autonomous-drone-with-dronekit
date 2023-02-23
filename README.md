@@ -60,6 +60,6 @@ NB: Sometimes, when you launch your script, it loads "Waiting for arming" for in
 
 Now, profit !!
 
-[drone](https://user-images.githubusercontent.com/109297892/221008823-1de2011f-6aa8-4f09-99da-aa0f5002b7b8.png)
+![drone](https://user-images.githubusercontent.com/109297892/221008823-1de2011f-6aa8-4f09-99da-aa0f5002b7b8.png)
 
 
