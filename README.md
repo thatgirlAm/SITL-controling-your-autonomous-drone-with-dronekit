@@ -33,7 +33,7 @@ sudo apt install libqt5gui5 -y
 
 sudo apt install libfuse2 -y 
 
-
+```
 
 Then logout and login again.
 
