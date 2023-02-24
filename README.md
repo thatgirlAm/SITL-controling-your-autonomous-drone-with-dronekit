@@ -10,7 +10,7 @@ then we'll try to control a real drone (leashed (fr) and with an RC to take over
 
 trève de blablas, let's go ! 
 
-> PS : we're working on Ubuntu  
+> PS : we're working on Ubuntu 18.4.5 LTS
 
 # Install required dependencies 
 
