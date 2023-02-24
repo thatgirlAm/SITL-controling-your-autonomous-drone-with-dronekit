@@ -1,5 +1,16 @@
 # Little dronekit X Qground control example
-drone kit X Qgroundcontrol 
+
+hola ninos, we're beginners so be nice :) 
+
+here's a simple beginner guide to control your drone through a python script. 
+
+We're experimenting first with a simulation in our terminal tabs, 
+
+then we'll try to control a real drone (leashed (fr) and with an RC to take over). 
+
+trève de blablas, let's go ! 
+
+> PS : we're working on Ubuntu  
 
 # Install required dependencies 
 
