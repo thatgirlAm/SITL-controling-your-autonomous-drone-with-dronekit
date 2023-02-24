@@ -3,33 +3,41 @@ drone kit X Qgroundcontrol
 
 # Install required dependencies 
 
-``sudo pip install dronekit``
+```
+sudo pip install dronekit
+  
+sudo pip install mavproxy
 
-``sudo pip install mavproxy``
+sudo pip install pymavlink 
 
-``sudo pip install pymavlink ``
+sudo pip install dronekit-sitl 
 
-``sudo pip install dronekit-sitl ``
+```
 
 For QGroundControl, I've installed this one : https://github.com/mavlink/qgroundcontrol/releases/tag/v4.1.5
 
-And don't forget to follow the official instructions before the installation: https://docs.qgroundcontrol.com/master/en/getting_started/download_and_install.html
+And don't forget to follow the official instructions before the installation: 
 
-``sudo usermod -a -G dialout $USER ``
+https://docs.qgroundcontrol.com/master/en/getting_started/download_and_install.html
 
-``sudo apt-get remove modemmanager -y ``
+In your terminal run : 
 
-``sudo apt install gstreamer1.0-plugins-bad gstreamer1.0-libav gstreamer1.0-gl -y ``
+```
+sudo usermod -a -G dialout $USER 
 
-``sudo apt install libqt5gui5 -y ``
+sudo apt-get remove modemmanager -y 
 
-``sudo apt install libfuse2 -y ``
+sudo apt install gstreamer1.0-plugins-bad gstreamer1.0-libav gstreamer1.0-gl -y 
 
-also logout and login again.
+sudo apt install libqt5gui5 -y 
+
+sudo apt install libfuse2 -y 
+
+Then logout and login again.
 
 # Launching the TCP connection 
 
-In a terminal tab enter : 
+In a terminal tab run : 
 
 ``dronekit-sitl [the model you want] ``
 
