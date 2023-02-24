@@ -47,7 +47,7 @@ you can find out your options with :
 
 ``dronekit-sitl --list `` 
 
-for this example we're going to use the copter model, so we'll enter :
+for this example we're going to use the copter model, so we'll run :
 
 `` dronekit-sitl copter ``
 
